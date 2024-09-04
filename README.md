@@ -1,11 +1,12 @@
 
-### build image
+
 ```
-docker build -t dev-user-api:v1.0.0 .
+# build image
+docker build -t {project-name}:v1.0.0 .
+```
+# docker run
+docker run --name {project-name} -p 8000:80 -d {project-name}:v1.0.0 
 ```
 
-### docker run
-```
-docker run --name dev-user-api -p 8000:80 -d dev-user-api:v1.0.0 
-```
+
 

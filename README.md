@@ -1,7 +1,7 @@
-```
 
-docker build -t dev-order-api:v1.0.0 .
+# build image
+docker build -t dev-user-api:v1.0.0 .
 
-docker run --name dev-order-api -p 8000:80 -d dev-order-api:v1.0.0 
+# docker run
+docker run --name dev-user-api -p 8000:80 -d dev-user-api:v1.0.0 
 
-```

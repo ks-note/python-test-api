@@ -24,6 +24,10 @@ async def get_container_name():
         return {"hostname": container_name}
     except Exception as e:
         return {"error": str(e)}
-​
+        
+​@app.get("/api/users/version")
+async def version():
+    return JSONResponse(status_code=200, content={"version": "v1.0.0"})
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=80) 
